@@ -89,9 +89,6 @@ public class MainActivity extends AppCompatActivity {
     private ScanCallback leScanCallback = new ScanCallback() {
         @Override
         public void onScanResult(int callbackType, ScanResult result) {
-//            System.out.println("device name: " + result.getDevice().getName());
-//            System.out.println("device rssi: " + result.getRssi());
-//            System.out.println("device contents: " + result.getDevice().getAddress());
             peripheralTextView.append("Device Name: " + result.getDevice().getName() + " rssi: " + result.getRssi() + "\n");
         }
     };
