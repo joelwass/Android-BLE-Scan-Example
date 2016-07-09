@@ -140,6 +140,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void stopScanning() {
         System.out.println("stopping scanning");
+        peripheralTextView.append("Stopped Scanning");
         startScanningButton.setVisibility(View.VISIBLE);
         stopScanningButton.setVisibility(View.INVISIBLE);
         AsyncTask.execute(new Runnable() {
